@@ -173,6 +173,52 @@ body::after {
   padding: 5px;
 }
 
+/* Two Main Columns System */
+/* Sidebar column */
+.side2 {
+  -ms-flex: 18%; /* IE10 */
+  flex: 18%;
+  background-color: #111111;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main column */
+.main2 {
+  -ms-flex: 32%; /* IE10 */
+  flex: 32%;
+  background-color: #111111;
+  padding: 20px;
+  text-align: center;
+}
+
+.main2 h2 {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+}
+
+.main2 h3 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  text-shadow: -2px 0 2px #C00000, 0 2px 2px #C00000, 2px 0 2px #C00000, 0 -2px 2px #C00000;
+}
+
+.main2 h4 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.main2 img {
+  height: 300px;
+  width: 300px;
+  border: 3px solid #C00000;
+  border-radius: 5px;
+  padding: 5px;
+}
+
 footer {
   overflow: hidden;
   text-align: center;
