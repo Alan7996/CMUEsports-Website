@@ -1,17 +1,12 @@
-<!--<html>
-	<h1 align = "center">
-		CMUESPORTS website is currently under construction, please visit us again on a later date!
-	</h1>
-</html>-->
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>
-			CMU ESPORTS
-		</title>
-		<meta charset="UTF-8">
+  <head>
+    <title>
+      CMU ESPORTS LEAGUE OF LEGENDS
+    </title>
+    <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<style>
+    <style>
 		* {
 			box-sizing: border-box;
 		}
@@ -32,7 +27,7 @@
 			text-align: center;
 			background: #000000;
 			color: white;
-			background-image: url('images/main_background.jpg');
+			background-image: url('../images/steelcitylan_shirts.jpg');
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: cover;
@@ -113,6 +108,10 @@
   		background-color: red;
 		}
 
+		ul {
+			list-style-type: disc;
+		}
+
 		/* Column container */
 		.row {
   		display: -ms-flexbox; /* IE10 */
@@ -136,22 +135,6 @@
     	max-width: 55px;
 		}
 
-		footer {
-			overflow: hidden;
-			text-align: center;
-			background-color: #D3D3D3;
-			padding: 10px 0 10px 0;
-		}
-
-		footer a {
-	  	float: center;
-			font-size: 35px;
-	  	color: white;
-			padding: 14px 16px;
-	  	text-align: center;
-	 		text-decoration: none;
-		}
-
 		/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 		@media screen and (max-width: 700px) {
   		.row {
@@ -169,60 +152,47 @@
 
 		@font-face {
 			font-family: "SquareDeal";
-			src: url(fonts/square-deal.ttf) format("truetype");
+			src: url(../fonts/square-deal.ttf) format("truetype");
 		}
 		</style>
-
-		<link rel="stylesheet" href="discord_invite/discordInvite.css"/>
 	</head>
-	<body>
-		<div class="navbar">
+  <body>
+    <div class="navbar">
 			<a href="#home" style="pointer-events:none;padding: 3px 3px;">
-				<img src='images/logo.png' class="logo" />
+				<img src='../images/logo.png' class="logo" />
 			</a>
-  		<a href="index.html">Home</a>
-  		<a href="news/news.html">News</a>
+  		<a href="../index.html">Home</a>
+  		<a href="../news/news.html">News</a>
   		<div class="dropdown">
     		<button class="dropbtn">
-					<a href="teams/teams.html">
-						Teams
-					</a>
+          <a href="teams.html">
+            Teams
+          </a>
       		<i class="fa fa-caret-down"></i>
     		</button>
     		<div class="dropdown-content">
-      		<a href="teams/leagueoflegends.html">League of Legends</a>
+      		<a href="leagueoflegends.html">League of Legends</a>
       		<a href="#">Overwatch</a>
       		<a href="#">Rainbow Six Siege</a>
     		</div>
   		</div>
 		</div>
 
-		<div class="header">
-			<h1>CMU Esports</h1>
+    <div class="header">
+			<h1>CMU Esports Teams</h1>
 			<p>Nerf this!</p>
 		</div>
 
 		<div class="row">
 			<div class="main">
-				<h2>Welcome</h2>
-				<h5>This is the official CMU Esports page.</h5>
-				<iframe src="https://discordapp.com/widget?id=178231819806703616&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
-				<script src="discord_invite/discordInvite.js"></script>
-				<script>
-		  		discordInvite.init({
-		  			inviteCode: 'sknHTyY',
-			  		title: 'CMU Esports',
-					});
-					discordInvite.render();
-				</script>
-				<div id="discordInviteBox"></div>
+				<h2>League of Legends Teams</h2>
 			</div>
 		</div>
 
-		<footer>
+    <footer>
 			<a href="#facebook">Facebook</a>
 			<a href="#twitter">Twitter</a>
 			<a href="https://discord.gg/sknHTyY" target="_blank">Discord</a>
 		</footer>
-	</body>
+  </body>
 </html>
