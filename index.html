@@ -19,18 +19,28 @@
 		/* Style the body */
 		body {
 			font-family: Arial, Helvetica, sans-serif;
+			color: #C00000;
+			background-color: #111111;
 			margin: 0;
 			/*margin-left: 5%;
 			margin-right: 5%;*/
 			padding: 0;
 			overflow-y: scroll;
+			min-height: 100%;
+			position: relative;
+		}
+
+		body::after {
+			content:'';
+			display: block;
+			height: 50px;
 		}
 
 		/* Header/logo Title */
 		.header {
 			padding: 100px;
 			text-align: center;
-			background: #000000;
+			background: #111111;
 			color: white;
 			background-image: url('images/main_background.jpg');
 			background-repeat: no-repeat;
@@ -121,11 +131,21 @@
   		flex-wrap: wrap;
 		}
 
+		/* Create two unequal columns that sits next to each other */
+		/* Sidebar/right column */
+		.side {
+  		-ms-flex: 30%; /* IE10 */
+  		flex: 30%;
+  		background-color: #111111;
+  		padding: 20px;
+			text-align: right;
+		}
+
 		/* Main column */
 		.main {
   		-ms-flex: 70%; /* IE10 */
   		flex: 70%;
-  		background-color: white;
+  		background-color: #111111;
   		padding: 20px;
 		}
 
@@ -139,8 +159,13 @@
 		footer {
 			overflow: hidden;
 			text-align: center;
-			background-color: #D3D3D3;
+			font-family: SquareDeal,Helvetica Neue,Helvetica,Arial,sans-serif;
+			background-color: #333;
 			padding: 10px 0 10px 0;
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			height: 50px;
 		}
 
 		footer a {
@@ -172,6 +197,24 @@
 			src: url(fonts/square-deal.ttf) format("truetype");
 		}
 		</style>
+
+		<link rel="apple-touch-icon" sizes="57x57" href="logo/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="logo/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="logo/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="logo/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="logo/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="logo/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="logo/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="logo/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="logo/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="logo/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="logo/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="logo/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="logo/favicon-16x16.png">
+		<link rel="manifest" href="logo/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="logo/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 
 		<link rel="stylesheet" href="discord_invite/discordInvite.css"/>
 	</head>
@@ -206,7 +249,6 @@
 			<div class="main">
 				<h2>Welcome</h2>
 				<h5>This is the official CMU Esports page.</h5>
-				<iframe src="https://discordapp.com/widget?id=178231819806703616&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 				<script src="discord_invite/discordInvite.js"></script>
 				<script>
 		  		discordInvite.init({
@@ -216,13 +258,26 @@
 					discordInvite.render();
 				</script>
 				<div id="discordInviteBox"></div>
+				<iframe src="https://player.twitch.tv/?channel=cmuesports"
+				frameborder="0" allowfullscreen="true" scrolling="no" height="378"
+				width="620"></iframe>
+			</div>
+
+			<div class="side">
+				<a class="twitter-timeline" href="https://twitter.com/CMU_Esports" width="75%" height ="80%">
+				Tweets by @CMU_Esports
+				</a>
+				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				<br>
+				<iframe src="https://discordapp.com/widget?id=178231819806703616&theme=dark" width="75%" height="100%" allowtransparency="true" frameborder="0"></iframe>
 			</div>
 		</div>
-
-		<footer>
-			<a href="#facebook">Facebook</a>
-			<a href="#twitter">Twitter</a>
-			<a href="https://discord.gg/sknHTyY" target="_blank">Discord</a>
-		</footer>
 	</body>
+
+	<footer>
+		<a href="https://www.facebook.com/groups/CMUesports/" target="_blank">Facebook</a>
+		<a href="https://twitter.com/CMU_Esports?lang=en" target="_blank">Twitter</a>
+		<a href="https://discord.gg/sknHTyY" target="_blank">Discord</a>
+		<a href="https://www.twitch.tv/cmuesports" target="-_blank">Twitch</a>
+	</footer>
 </html>
