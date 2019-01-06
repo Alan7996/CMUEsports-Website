@@ -41,7 +41,7 @@
 			padding: 100px;
 			text-align: center;
 			background: #111111;
-			color: white;
+			color: #EEEEEE;
 			background-image: url('images/main_background.jpg');
 			background-repeat: no-repeat;
 			background-position: center;
@@ -52,8 +52,8 @@
 
 		/* Increase the font size of the heading */
 		.header h1 {
-			text-shadow: -2px 0 red, 0 2px red, 2px 0 red, 0 -2px red;
-			font-size: 40px;
+			text-shadow: -4px 0 4px #C00000, 0 4px 4px #C00000, 4px 0 4px #C00000, 0 -4px 4px #C00000;
+			font-size: 80px;
 		}
 
 		.navbar {
@@ -132,21 +132,34 @@
 		}
 
 		/* Create two unequal columns that sits next to each other */
-		/* Sidebar/right column */
+		/* Sidebar column */
 		.side {
-  		-ms-flex: 30%; /* IE10 */
-  		flex: 30%;
+  		-ms-flex: 22%; /* IE10 */
+  		flex: 22%;
   		background-color: #111111;
   		padding: 20px;
-			text-align: right;
+			text-align: center;
+		}
+
+		.side h2 {
+			font-size: 36px;
+			color: white;
+			text-align: center;
 		}
 
 		/* Main column */
 		.main {
-  		-ms-flex: 70%; /* IE10 */
-  		flex: 70%;
+  		-ms-flex: 56%; /* IE10 */
+  		flex: 56%;
   		background-color: #111111;
   		padding: 20px;
+			text-align: center;
+		}
+
+		.main h2 {
+			font-size: 36px;
+			color: white;
+			text-align: center;
 		}
 
 		img {
@@ -242,13 +255,11 @@
 
 		<div class="header">
 			<h1>CMU Esports</h1>
-			<p>Nerf this!</p>
 		</div>
 
 		<div class="row">
-			<div class="main">
-				<h2>Welcome</h2>
-				<h5>This is the official CMU Esports page.</h5>
+			<div class="side">
+				<h2>Join us on Discord</h2>
 				<script src="discord_invite/discordInvite.js"></script>
 				<script>
 		  		discordInvite.init({
@@ -258,18 +269,24 @@
 					discordInvite.render();
 				</script>
 				<div id="discordInviteBox"></div>
-				<iframe src="https://player.twitch.tv/?channel=cmuesports"
-				frameborder="0" allowfullscreen="true" scrolling="no" height="378"
-				width="620"></iframe>
+				<br> <br>
+				<iframe src="https://discordapp.com/widget?id=178231819806703616&theme=dark" width="100%" height="65%" allowtransparency="true" frameborder="0"></iframe>
+			</div>
+
+			<div class="main">
+				<h2>Watch us on Twitch</h2>
+				<p align="middle">
+					<iframe src="https://player.twitch.tv/?channel=cmuesports"
+					frameborder="0" allowfullscreen="true" scrolling="no" height="504"
+					width="894" margin-left="auto" margin-right="auto"></iframe>
+				</p>
 			</div>
 
 			<div class="side">
-				<a class="twitter-timeline" href="https://twitter.com/CMU_Esports" width="75%" height ="80%">
+				<a class="twitter-timeline" href="https://twitter.com/CMU_Esports" width="100%" height ="100%">
 				Tweets by @CMU_Esports
 				</a>
 				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-				<br>
-				<iframe src="https://discordapp.com/widget?id=178231819806703616&theme=dark" width="75%" height="100%" allowtransparency="true" frameborder="0"></iframe>
 			</div>
 		</div>
 	</body>
