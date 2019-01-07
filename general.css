@@ -1,11 +1,11 @@
-/* Version 1.4 */
+/* Version 1.5 */
 * {
   box-sizing: border-box;
 }
 
 /* Style the body */
 body {
-  font-family: TCCEB, Arial, Helvetica, sans-serif;
+  font-family: ANURLI, Arial, Helvetica, sans-serif;
   color: #C00000;
   background-color: #111111;
   margin: 0;
@@ -28,7 +28,6 @@ body::after {
   text-align: center;
   background: #111111;
   color: #EEEEEE;
-  font-family: TCCEB, Bebas, Arial, Helvetica, sans-serif;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -38,6 +37,7 @@ body::after {
 
 /* Increase the font size of the heading */
 .header h1 {
+  font-family: ANURLI, Arial, Helvetica, sans-serif;
   /*text-shadow: -4px 0 4px #C00000, 0 4px 4px #C00000, 4px 0 4px #C00000, 0 -4px 4px #C00000;*/
   font-size: 80px;
 }
@@ -194,6 +194,16 @@ body::after {
   padding: 5px;
 }
 
+/* Main for Officers */
+.main2 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  background-color: #111111;
+  padding: 20px;
+  text-align: center;
+}
+
+
 img.team {
   height: 15%;
   width: auto;
@@ -275,8 +285,8 @@ footer a {
 }
 
 @font-face {
-  font-family: "TCCEB";
-  src: url(fonts/TCCEB.ttf) format("truetype");
+  font-family: "ANURLI";
+  src: url(fonts/ANURLI.ttf) format("truetype");
 }
 
 /* Discord CSS */
