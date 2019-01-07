@@ -1,3 +1,4 @@
+/* Version 1.2 */
 * {
   box-sizing: border-box;
 }
@@ -43,15 +44,15 @@ body::after {
 .navbar {
   overflow: hidden;
   background-color: #333;
-  font-family: SquareDeal,SquareaRegular,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: Bebas, SquareDeal,SquareaRegular,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .navbar a {
   float: left;
   display: block;
-  font-size: 35px;
+  font-size: 30px;
   color: white;
-  padding: 14px 16px;
+  padding: 10px 16px;
   text-align: center;
   text-decoration: none;
 }
@@ -185,7 +186,7 @@ body::after {
 }
 
 img.team {
-  height: auto;
+  height: 15%;
   width: auto;
   border: 0;
   border-radius: 0;
@@ -194,7 +195,7 @@ img.team {
 footer {
   overflow: hidden;
   text-align: center;
-  font-family: SquareDeal,SquareaRegular,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: Bebas, SquareDeal,SquareaRegular,Helvetica Neue,Helvetica,Arial,sans-serif;
   background-color: #333;
   padding: 10px 0 10px 0;
   position: fixed;
