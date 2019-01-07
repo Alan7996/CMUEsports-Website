@@ -310,11 +310,6 @@ footer a {
 }
 
 @font-face {
-  font-family: "AleoBold";
-  src: url(fonts/Aleo-Font/DesktopOTF/Aleo-Bold.otf) format("opentype");
-}
-
-@font-face {
   font-family: "ANURLI";
   src: url(fonts/ANURLI.ttf) format("truetype");
 }
