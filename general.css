@@ -1,4 +1,4 @@
-/* Version 1.7 */
+/* Version 1.8 */
 * {
   box-sizing: border-box;
 }
@@ -181,7 +181,7 @@ body::after {
   font-size: 30px;
   color: white;
   text-align: center;
-  text-shadow: -2px 0 2px #C00000, 0 2px 2px #C00000, 2px 0 2px #C00000, 0 -2px 2px #C00000;
+  /*text-shadow: -2px 0 2px #C00000, 0 2px 2px #C00000, 2px 0 2px #C00000, 0 -2px 2px #C00000;*/
 }
 
 .main h4 {
@@ -217,7 +217,7 @@ body::after {
   font-size: 30px;
   color: white;
   text-align: center;
-  text-shadow: -2px 0 2px #C00000, 0 2px 2px #C00000, 2px 0 2px #C00000, 0 -2px 2px #C00000;
+  /*text-shadow: -2px 0 2px #C00000, 0 2px 2px #C00000, 2px 0 2px #C00000, 0 -2px 2px #C00000;*/
 }
 
 .main2 h4 {
