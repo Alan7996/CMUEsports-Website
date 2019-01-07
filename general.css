@@ -1,4 +1,4 @@
-/* Version 1.3 */
+/* Version 1.4 */
 * {
   box-sizing: border-box;
 }
@@ -19,7 +19,7 @@ body {
 body::after {
   content:'';
   display: block;
-  height: 50px;
+  height: 60px;
 }
 
 /* Header/logo Title */
@@ -28,7 +28,7 @@ body::after {
   text-align: center;
   background: #111111;
   color: #EEEEEE;
-  font-family: AleoBold, Bebas, Arial, Helvetica, sans-serif;
+  font-family: TCCEB, Bebas, Arial, Helvetica, sans-serif;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -38,7 +38,7 @@ body::after {
 
 /* Increase the font size of the heading */
 .header h1 {
-  text-shadow: -4px 0 4px #C00000, 0 4px 4px #C00000, 4px 0 4px #C00000, 0 -4px 4px #C00000;
+  /*text-shadow: -4px 0 4px #C00000, 0 4px 4px #C00000, 4px 0 4px #C00000, 0 -4px 4px #C00000;*/
   font-size: 80px;
 }
 
@@ -210,7 +210,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 50px;
+  height: 60px;
 }
 
 footer a {
