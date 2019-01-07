@@ -1,4 +1,4 @@
-/* Version 1.8 */
+/* Version 1.9 */
 * {
   box-sizing: border-box;
 }
@@ -234,6 +234,28 @@ body::after {
   padding: 5px;
 }
 
+.main3 {
+  -ms-flex: 100%; /* IE10 */
+  flex: 100%;
+  background-color: #111111;
+  padding: 20px;
+  text-align: center;
+}
+
+.main3 h2 {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+}
+
+h3.name {
+  font-family: Aleo-Bold, ANURLI, Arial, Helvetica, sans-serif;
+}
+
+h4 {
+  font-family: Aleo-Regular, ANURLI, Arial, Helvetica, sans-serif;
+}
+
 img.team {
   height: 15%;
   width: auto;
@@ -312,6 +334,16 @@ footer a {
 @font-face {
   font-family: "ANURLI";
   src: url(fonts/ANURLI.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Aleo-Regular";
+  src: url(fonts/Aleo-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Aleo-Bold";
+  src: url(fonts/Aleo-Bold.otf) format("opentype");
 }
 
 /* Discord CSS */
