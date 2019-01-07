@@ -6,4 +6,4 @@ This website is built primarily using HTML and CSS with one additional widget us
 
 ## CMU ESPORTS CLUB
 A gaming community based in Carnegie Mellon University.
-[Join us on Discord: https://https://discord.gg/sknHTyY]
+[Join us on Discord: https://https://discord.gg/cmuesports]
