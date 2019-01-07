@@ -1,4 +1,4 @@
-/* Version 1.6 */
+/* Version 1.7 */
 * {
   box-sizing: border-box;
 }
@@ -229,7 +229,7 @@ body::after {
 .main2 img {
   height: 300px;
   width: 300px;
-  border: 3px solid #C00000;
+  border: 1px solid #C00000;
   border-radius: 5px;
   padding: 5px;
 }
