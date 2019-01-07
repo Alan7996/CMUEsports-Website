@@ -1,4 +1,4 @@
-/* Version 1.9 */
+/* Version 1.10 */
 * {
   box-sizing: border-box;
 }
@@ -253,7 +253,7 @@ h3.name {
 }
 
 h4 {
-  font-family: Aleo-Regular, ANURLI, Arial, Helvetica, sans-serif;
+  font-family: ANURLI, Arial, Helvetica, sans-serif;
 }
 
 img.team {
@@ -334,11 +334,6 @@ footer a {
 @font-face {
   font-family: "ANURLI";
   src: url(fonts/ANURLI.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Aleo-Regular";
-  src: url(fonts/Aleo-Regular.ttf) format("opentype");
 }
 
 @font-face {
