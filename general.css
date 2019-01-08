@@ -1,4 +1,4 @@
-/* Version 1.14 */
+/* Version 1.15 */
 /* Fonts for website */
 @font-face {
   font-family: "Bebas";
@@ -148,11 +148,11 @@ body::after {
 }
 
 #teams {
-  margin-left: -77px;
+  margin-left: -55px;
 }
 
 #about {
-  margin-left: -135px;
+  margin-left: -150px;
 }
 
 /* Links inside the dropdown */
