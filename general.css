@@ -1,4 +1,4 @@
-/* Version 1.11 */
+/* Version 1.12 */
 * {
   box-sizing: border-box;
 }
@@ -251,7 +251,7 @@ body::after {
 .main3 h2 {
   font-size: 36px;
   color: white;
-  text-align: left;
+  text-align: center;
 }
 
 h3.name {
