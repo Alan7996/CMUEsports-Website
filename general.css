@@ -1,4 +1,4 @@
-/* Version 1.10 */
+/* Version 1.11 */
 * {
   box-sizing: border-box;
 }
@@ -135,6 +135,11 @@ body::after {
   display: block;
 }
 
+#disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
 /* Column container */
 .row {
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -216,14 +221,15 @@ body::after {
 .main2 h3 {
   font-size: 30px;
   color: white;
-  text-align: center;
+  text-align: left;
   /*text-shadow: -2px 0 2px #C00000, 0 2px 2px #C00000, 2px 0 2px #C00000, 0 -2px 2px #C00000;*/
 }
 
 .main2 h4 {
-  font-size: 25px;
+  font-size: 20px;
   color: white;
-  text-align: center;
+  text-align: left;
+  margin-top: -20px;
 }
 
 .main2 img {
@@ -245,15 +251,19 @@ body::after {
 .main3 h2 {
   font-size: 36px;
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 h3.name {
-  font-family: Aleo-Bold, ANURLI, Arial, Helvetica, sans-serif;
+  font-family: Coves-Bold, Aleo-Bold, ANURLI, Arial, Helvetica, sans-serif;
 }
 
 h4 {
   font-family: ANURLI, Arial, Helvetica, sans-serif;
+}
+
+h4.pos {
+  font-family: Coves-Light, Aleo-Bold, ANURLI, Arial, Helvetica, sans-serif;
 }
 
 img.team {
@@ -339,6 +349,16 @@ footer a {
 @font-face {
   font-family: "Aleo-Bold";
   src: url(fonts/Aleo-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Coves-Bold";
+  src: url(fonts/Coves-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Coves-Light";
+  src: url(fonts/Coves-Light.otf) format("opentype");
 }
 
 /* Discord CSS */
