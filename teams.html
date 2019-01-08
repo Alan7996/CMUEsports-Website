@@ -6,7 +6,7 @@
     </title>
     <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="general.css?v=1.13"/>
+		<link rel="stylesheet" type="text/css" href="general.css?v=1.14"/>
     <script src="https://use.fontawesome.com/416461d866.js"></script>
 
     <link rel="apple-touch-icon" sizes="57x57" href="https://i.imgur.com/NhdcHH3.png">
@@ -36,30 +36,28 @@
   			<a href="index.html">Home</a>
 				<a href="events.html">Events</a>
   			<a href="news.html">News</a>
-				<div class="dropdown" >
-    			<button class="dropbtn">
-						<a href="teams.html">
-							Teams
-						</a>
-      			<i></i>
+        <div class="dropdown">
+    			<button onclick="drop_teams()" class="dropbtn">
+						Teams
+						<i class="fa fa-caret-down"></i>
     			</button>
-    			<div class="dropdown-content">
-      			<a href="teams/leagueoflegends.html">League of Legends</a>
-      			<a href="teams/overwatch.html">Overwatch</a>
-      			<a href="teams/r6.html">Rainbow Six Siege</a>
+    			<div class="dropdown-content" id="teams">
+						<a href="teams/leagueoflegends.html">League of Legends</a>
+						<a href="teams/overwatch.html">Overwatch</a>
+						<a href="teams/r6.html">Rainbow Six Siege</a>
     			</div>
   			</div>
 				<a href="officers.html">Officers</a>
 				<a href="alumni.html">Alumni</a>
-        <a href="store.html">Store</a>
-        <div class="dropdownbtn">
-    			<button onclick="dropbtn()" class="dropbtn2">
+				<a href="store.html">Store</a>
+				<div class="dropdown">
+    			<button onclick="drop_about()" class="dropbtn">
 						About
 						<i class="fa fa-caret-down"></i>
     			</button>
-    			<div class="dropdownbtn-content" id="myDropdown">
+    			<div class="dropdown-content" id="about">
             <a href="about/about.html">About</a>
-      			<a href="about/contactus.html">Contact<br>Us</a>
+      			<a href="about/contactus.html">Contact Us</a>
     			</div>
   			</div>
 				<a href="javascript:void(0);" class="icon" onclick="fun()">
@@ -81,16 +79,26 @@
 
 		/* When the user clicks on the button, toggle between hiding and showing
 		the dropdown content */
-		function dropbtn() {
-  		document.getElementById("myDropdown").classList.toggle("show");
+    function drop_teams() {
+  		document.getElementById("teams").classList.toggle("show");
+			if (document.getElementById("about").classList.contains("show")) {
+				document.getElementById("about").classList.remove("show")
+			}
+		}
+
+		function drop_about() {
+  		document.getElementById("about").classList.toggle("show");
+			if (document.getElementById("teams").classList.contains("show")) {
+				document.getElementById("teams").classList.remove("show")
+			}
 		}
 
 		// Close the dropdown menu if the user clicks outside of it
 		window.onclick = function(event) {
-  		if (!event.target.matches('.dropbtn2')) {
-    		var dropdowns = document.getElementsByClassName("dropdownbtn-content");
-      	if (openDropdown.classList.contains('show')) {
-        	openDropdown.classList.remove('show');
+  		if (!event.target.matches(".dropbtn")) {
+    		var dropdowns = document.getElementsByClassName("dropdown-content");
+      	if (openDropdown.classList.contains("show")) {
+        	openDropdown.classList.remove("show");
       	}
   		}
 		}
