@@ -6,7 +6,7 @@
     </title>
     <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="../general.css?v=1.12"/>
+		<link rel="stylesheet" type="text/css" href="../general.css?v=1.13"/>
     <script src="https://use.fontawesome.com/416461d866.js"></script>
 
     <link rel="apple-touch-icon" sizes="57x57" href="https://i.imgur.com/NhdcHH3.png">
@@ -52,14 +52,12 @@
 				<a href="../officers.html">Officers</a>
 				<a href="../alumni.html">Alumni</a>
         <a href="../store.html">Store</a>
-        <div class="dropdown" >
-    			<button class="dropbtn" id="disabled">
-						<a href="#">
-							About
-						</a>
-      			<i></i>
+        <div class="dropdownbtn">
+    			<button onclick="dropbtn()" class="dropbtn2">
+						About
+						<i class="fa fa-caret-down"></i>
     			</button>
-    			<div class="dropdown-content">
+    			<div class="dropdownbtn-content" id="myDropdown">
             <a href="../about/about.html">About</a>
       			<a href="../about/contactus.html">Contact<br>Us</a>
     			</div>
@@ -69,6 +67,34 @@
   			</a>
 			</div>
 		</div>
+
+    <script>
+		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+		function fun() {
+			var x = document.getElementById("myNavBar");
+			if (x.className === "navbar") {
+				x.className += " responsive";
+			} else {
+				x.className = "navbar";
+			}
+		}
+
+		/* When the user clicks on the button, toggle between hiding and showing
+		the dropdown content */
+		function dropbtn() {
+  		document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown menu if the user clicks outside of it
+		window.onclick = function(event) {
+  		if (!event.target.matches('.dropbtn2')) {
+    		var dropdowns = document.getElementsByClassName("dropdownbtn-content");
+      	if (openDropdown.classList.contains('show')) {
+        	openDropdown.classList.remove('show');
+      	}
+  		}
+		}
+		</script>
 
     <div class="header" style="background-image: url('https://i.imgur.com/fdL14sl.jpg');">
 			<h1>Rainbow Six Siege</h1>
