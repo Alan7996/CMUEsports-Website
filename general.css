@@ -1,4 +1,4 @@
-/* Version 1.15 */
+/* Version 1.16 */
 /* Fonts for website */
 @font-face {
   font-family: "Bebas";
@@ -286,16 +286,16 @@ body::after {
   text-align: center;
 }
 
-h3.name {
+h2.about {
   font-family: Coves-Bold, Aleo-Bold, ANURLI, Arial, Helvetica, sans-serif;
 }
 
-h4 {
+h3.name {
   font-family: ANURLI, Arial, Helvetica, sans-serif;
 }
 
-h4.pos {
-  font-family: Coves-Light, Aleo-Bold, ANURLI, Arial, Helvetica, sans-serif;
+h4 {
+  font-family: Coves-Bold, Aleo-Bold, ANURLI, Arial, Helvetica, sans-serif;
 }
 
 img.team {
@@ -315,6 +315,10 @@ table {
   font-size: 36px;
   color: white;
   text-align: left;
+}
+
+td {
+  font-family: Coves-Bold, Aleo-Bold, ANURLI, Arial, Helvetica, sans-serif;
 }
 
 input {
