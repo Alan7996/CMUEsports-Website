@@ -287,7 +287,7 @@ body::after {
 }
 
 h2.about {
-  font-family: Coves-Bold, Aleo-Bold, ANURLI, Arial, Helvetica, sans-serif;
+  font-family: Coves-Light, Aleo-Bold, ANURLI, Arial, Helvetica, sans-serif;
 }
 
 h3.name {
@@ -318,7 +318,7 @@ table {
 }
 
 td {
-  font-family: Coves-Bold, Aleo-Bold, ANURLI, Arial, Helvetica, sans-serif;
+  font-family: Coves-Light, Aleo-Bold, ANURLI, Arial, Helvetica, sans-serif;
 }
 
 input {
