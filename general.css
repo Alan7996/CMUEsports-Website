@@ -228,6 +228,14 @@ body::after {
   padding: 5px;
 }
 
+.main img.resources {
+  height: 300px;
+  width: auto;
+  border: 3px solid #C00000;
+  border-radius: 5px;
+  padding: 0px;
+}
+
 /* Main for Officers */
 .main2 {
   -ms-flex: 25%; /* IE10 */
@@ -291,9 +299,30 @@ h4 {
   font-family: Coves-Bold, Aleo-Bold, ANURLI, Arial, Helvetica, sans-serif;
 }
 
+h2.resources {
+  font-family: BEBAS, Arial, Helvetica, sans-serif;
+  color: #C41230;
+  text-align: left;
+}
+
+h3.resources {
+  text-align: left;
+}
+
+h4.resources {
+  text-align: left;
+}
+
 img.team {
   height: 15%;
   width: auto;
+  border: 0;
+  border-radius: 0;
+}
+
+img.big_logo {
+  width: 140px;
+  height: auto;
   border: 0;
   border-radius: 0;
 }
@@ -312,6 +341,11 @@ table {
 
 td {
   font-family: Coves-Light, Aleo-Bold, ANURLI, Arial, Helvetica, sans-serif;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #C41230;
 }
 
 input {
