@@ -1,4 +1,4 @@
-/* Version 1.17 */
+/* Version 1.18 */
 /* Fonts for website */
 @font-face {
   font-family: "Bebas";
@@ -339,7 +339,7 @@ footer {
   text-align: center;
   font-family: Coves-Light,Arial,sans-serif;
   color: white;
-  background-color: #333;
+  background-color: #6d6e71;
   padding: 10px 0 10px 0;
   position: fixed;
   bottom: 0;
