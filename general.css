@@ -33,7 +33,7 @@
 body {
   font-family: ANURLI, Arial, Helvetica, sans-serif;
   color: #C00000;
-  background-color: #111111;
+  background-color: #212020;
   margin: 0;
   padding: 0;
   overflow-y: scroll;
@@ -73,7 +73,7 @@ body::after {
 
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #6d6e71;
   font-family: Bebas,Arial,sans-serif;
   z-index: 2;
 }
@@ -181,7 +181,7 @@ body::after {
 .side {
   -ms-flex: 22%; /* IE10 */
   flex: 22%;
-  background-color: #111111;
+  background-color: #212020;
   padding: 20px;
   text-align: center;
 }
@@ -196,7 +196,7 @@ body::after {
 .main {
   -ms-flex: 56%; /* IE10 */
   flex: 56%;
-  background-color: #111111;
+  background-color: #212020;
   padding: 20px;
   text-align: center;
 }
@@ -232,7 +232,7 @@ body::after {
 .main2 {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
-  background-color: #111111;
+  background-color: #212020;
   padding: 20px;
   text-align: center;
 }
@@ -268,7 +268,7 @@ body::after {
 .main3 {
   -ms-flex: 100%; /* IE10 */
   flex: 100%;
-  background-color: #111111;
+  background-color: #212020;
   padding: 20px;
   text-align: center;
 }
