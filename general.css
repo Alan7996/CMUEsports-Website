@@ -1,4 +1,4 @@
-/* Version 1.19 */
+/* Version 1.20 */
 /* Fonts for website */
 @font-face {
   font-family: "Bebas";
@@ -73,7 +73,7 @@ body::after {
 
 .navbar {
   overflow: hidden;
-  background-color: #6d6e71;
+  background-color: #212020CC;
   font-family: Bebas,Arial,sans-serif;
   z-index: 2;
 }
@@ -373,7 +373,7 @@ footer {
   text-align: center;
   font-family: Coves-Light,Arial,sans-serif;
   color: white;
-  background-color: #6d6e71;
+  background-color: #212020CC;
   padding: 10px 0 10px 0;
   position: fixed;
   bottom: 0;
