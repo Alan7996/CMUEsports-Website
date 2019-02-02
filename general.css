@@ -1,4 +1,4 @@
-/* Version 1.20 */
+/* Version 1.21 */
 /* Fonts for website */
 @font-face {
   font-family: "Bebas";
@@ -292,6 +292,10 @@ h2.about {
 }
 
 h3.name {
+  font-family: ANURLI, Arial, Helvetica, sans-serif;
+}
+
+h3.role {
   font-family: ANURLI, Arial, Helvetica, sans-serif;
 }
 
