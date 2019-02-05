@@ -1,4 +1,4 @@
-/* Version 1.22 */
+/* Version 1.23 */
 /* Fonts for website */
 @font-face {
   font-family: "Bebas";
@@ -68,7 +68,7 @@ body::after {
 .header h1 {
   font-family: ANURLI, Arial, Helvetica, sans-serif;
   /*text-shadow: -4px 0 4px #C00000, 0 4px 4px #C00000, 4px 0 4px #C00000, 0 -4px 4px #C00000;*/
-  font-size: 80px;
+  font-size: 7vh;
 }
 
 .navbar {
@@ -411,7 +411,7 @@ footer a {
 }
 
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .navbar a:not(.logo) {display: none;}
   .navbar .dropdown:not(:first-child) {display: none;}
   .navbar a.icon {
@@ -423,10 +423,7 @@ footer a {
 /* The "responsive" class is added to the navbar with JavaScript when the user
 clicks on the icon. This class makes the navbar look good on small screens
 (display the links vertically instead of horizontally) */
-@media screen and (max-width: 800px) {
-  .header.responsive h1 {
-    font-size: 40px;
-  }
+@media screen and (max-width: 600px) {
   .navbar.responsive {
     position: relative;
   }
