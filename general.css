@@ -1,4 +1,4 @@
-/* Version 1.21 */
+/* Version 1.22 */
 /* Fonts for website */
 @font-face {
   font-family: "Bebas";
@@ -255,6 +255,7 @@ body::after {
   font-size: 30px;
   color: white;
   text-align: left;
+  margin-top: -20px;
   /*text-shadow: -2px 0 2px #C00000, 0 2px 2px #C00000, 2px 0 2px #C00000, 0 -2px 2px #C00000;*/
 }
 
@@ -262,7 +263,14 @@ body::after {
   font-size: 20px;
   color: white;
   text-align: left;
-  margin-top: -20px;
+  margin-top: -30px;
+}
+
+.main2 h5 {
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  margin-top: 10px;
 }
 
 .main2 img {
@@ -295,8 +303,8 @@ h3.name {
   font-family: ANURLI, Arial, Helvetica, sans-serif;
 }
 
-h3.role {
-  font-family: ANURLI, Arial, Helvetica, sans-serif;
+h5.role {
+  font-family: Coves-Light, Arial, Helvetica, sans-serif;
 }
 
 h4 {
