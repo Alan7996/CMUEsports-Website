@@ -1,5 +1,5 @@
 /* Version 1.23 */
-/* Fonts for website */
+/* Fonts for website, needs to be declared at top for them to work */
 @font-face {
   font-family: "Bebas";
   src: url(fonts/BEBAS.ttf) format("truetype");
@@ -29,7 +29,7 @@
   box-sizing: border-box;
 }
 
-/* Style the body */
+/* Style the overall body */
 body {
   font-family: ANURLI, Arial, Helvetica, sans-serif;
   color: #C00000;
@@ -43,6 +43,7 @@ body {
   z-index: 0;
 }
 
+/* Create space for footer */
 body::after {
   content:'';
   display: block;
@@ -64,10 +65,8 @@ body::after {
   z-index: 1;
 }
 
-/* Increase the font size of the heading */
 .header h1 {
   font-family: ANURLI, Arial, Helvetica, sans-serif;
-  /*text-shadow: -4px 0 4px #C00000, 0 4px 4px #C00000, 4px 0 4px #C00000, 0 -4px 4px #C00000;*/
   font-size: 7vh;
 }
 
@@ -75,6 +74,7 @@ body::after {
   overflow: visible !important;
 }
 
+/* Navbar code */
 .navbar {
   overflow: hidden;
   background-color: #212020CC;
@@ -117,6 +117,7 @@ body::after {
   display: none;
 }
 
+/* Dropdown container code */
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   float: left;
@@ -164,11 +165,13 @@ body::after {
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #ddd}
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content
+container when the user clicks on the dropdown button) */
 .show {
   display: flex;
 }
 
+/* Main body code */
 /* Column container */
 .row {
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -180,7 +183,6 @@ body::after {
   flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
 /* Sidebar column */
 .side {
   -ms-flex: 22%; /* IE10 */
@@ -196,7 +198,7 @@ body::after {
   text-align: center;
 }
 
-/* Main column */
+/* Main column inbetween sidebars */
 .main {
   -ms-flex: 56%; /* IE10 */
   flex: 56%;
@@ -240,7 +242,7 @@ body::after {
   padding: 0px;
 }
 
-/* Main for Officers */
+/* Main for listing people (each cell 25% page width) */
 .main2 {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
@@ -285,6 +287,7 @@ body::after {
   padding: 5px;
 }
 
+/* Main for using full page width */
 .main3 {
   -ms-flex: 100%; /* IE10 */
   flex: 100%;
@@ -299,6 +302,7 @@ body::after {
   text-align: center;
 }
 
+/* More generic styling & class-specific styles */
 h2.about {
   font-family: Coves-Light, Aleo-Bold, ANURLI, Arial, Helvetica, sans-serif;
 }
@@ -307,27 +311,31 @@ h3.name {
   font-family: ANURLI, Arial, Helvetica, sans-serif;
 }
 
-h5.role {
-  font-family: Coves-Light, Arial, Helvetica, sans-serif;
-}
-
 h4 {
   font-family: Coves-Bold, Aleo-Bold, ANURLI, Arial, Helvetica, sans-serif;
 }
 
+h5.role {
+  font-family: Coves-Light, Arial, Helvetica, sans-serif;
+}
+
+/* Following three are specific to Resources page */
 h2.resources {
   font-family: BEBAS, Arial, Helvetica, sans-serif;
   color: #C41230;
   text-align: left;
 }
 
-h3.resources {
+h4.cC4tL {
+  color: #C41230;
   text-align: left;
 }
 
-h4.resources {
+h4.m30tL {
+  margin-top: -30px;
   text-align: left;
 }
+/**/
 
 img.team {
   height: 15%;
@@ -343,6 +351,12 @@ img.big_logo {
   border-radius: 0;
 }
 
+hr {
+  border: 0;
+  border-top: 1px solid #C41230;
+}
+
+/* Code potentially usable for Contact Us if we can get it working */
 form {
   margin: 0 auto;
   width: 60%;
@@ -357,11 +371,6 @@ table {
 
 td {
   font-family: Coves-Light, Aleo-Bold, ANURLI, Arial, Helvetica, sans-serif;
-}
-
-hr {
-  border: 0;
-  border-top: 1px solid #C41230;
 }
 
 input {
@@ -384,6 +393,7 @@ input[type=submit] {
   height: 50px;
 }
 
+/* Formatting footer */
 footer {
   overflow: hidden;
   text-align: center;
@@ -414,7 +424,9 @@ footer a {
   text-decoration: none;
 }
 
-/* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
+/* Responsive navigation bar code */
+/* When the screen is less than 800 pixels wide, hide all links, except for the
+drop down icon */
 @media screen and (max-width: 600px) {
   .navbar a:not(.logo) {display: none;}
   .navbar .dropdown:not(:first-child) {display: none;}
